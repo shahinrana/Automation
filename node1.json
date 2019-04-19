@@ -1,0 +1,44 @@
+{
+	/*java -Dwebdriver.chrome.driver="chromedriver.exe" -Dwebdriver.gecko.driver="geckodriver.exe" -jar selenium-server-standalone-3.11.0.jar -role node -nodeConfig node1.json*/
+	"capabilities":
+  [
+    {
+      "browserName": "firefox",
+	  "acceptSslCerts": true,
+      "javascriptEnabled": true,
+      "takesScreenshot": true,
+      "firefox_profile": "",
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver",
+	  "cleanSession": true 
+    },
+    {
+      "browserName": "chrome",
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver",
+	  "cleanSession": true 
+    },
+    {
+      "browserName": "internet explorer",
+      "maxInstances": 5,
+      "seleniumProtocol": "WebDriver",
+	  "cleanSession": true 
+    }
+  ],
+  "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+ // "maxSession": 20,
+  "port": 5555,//change as per add ip
+  "register": true,
+  "registerCycle": 5000,
+  "hub": "http://192.168.1.113:4444",//change as per hub address
+  "nodeStatusCheckTimeout": 5000,
+  "nodePolling": 5000,
+  "role": "node",
+   "maxSessions": 150,
+  "unregisterIfStillDownAfter": 60000,
+  "downPollingLimit": 2,
+  "debug": false,
+  "servlets" : [],
+  "withoutServlets": [],
+  "custom": {}
+}

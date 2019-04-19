@@ -1,0 +1,6 @@
+java -Dwebdriver.chrome.driver=C:\Users\yogeshsolanki\Desktop\Selenium Test Setup\drivers\chromedriver.exe -jar selenium-server-standalone-3.6.0.jar -role hub -hubConfig hub.json
+
+java  -Dwebdriver.chrome.driver=C:\Users\yogeshsolanki\Desktop\Selenium Test Setup\drivers\chromedriver.exe -jar selenium-server-standalone-3.6.0 -role node -nodeConfig node1.json
+
+java  -Dwebdriver.chrome.driver=C:\Users\yogeshsolanki\Desktop\Selenium Test Setup\drivers\chromedriver.exe -jar selenium-server-standalone-3.6.0 -role node -nodeConfig node2.json
+
